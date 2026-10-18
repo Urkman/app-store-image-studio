@@ -26,7 +26,25 @@ Everything can change:
 
 ## Install globally
 
-You need Git and a coding agent that supports local skills. Run these commands once to keep one shared installation for all three agents:
+### With the skills CLI
+
+With Node.js and Git installed, run:
+
+```sh
+npx skills add Urkman/app-store-image-studio --global
+```
+
+Select the agents you want to use during installation. You can also explicitly select an agent, for example:
+
+```sh
+npx skills add Urkman/app-store-image-studio --global --agent claude-code
+```
+
+See the [skills.sh directory](https://skills.sh) and [CLI documentation](https://skills.sh/docs/cli) for supported agents and options. The directory tracks installations through the CLI's default anonymous telemetry; directory visibility may take time to update.
+
+### Manual shared installation
+
+You need Git and a coding agent that supports local skills. As an alternative to the CLI, run these commands once to keep one shared installation for all three agents:
 
 ```sh
 mkdir -p "$HOME/.agents/skills"
@@ -45,7 +63,7 @@ ln -s "$HOME/.agents/skills/app-store-image-studio" \
 
 Only create the links for the agents you use. If the destination already exists, inspect your existing installation first; do not overwrite it. A working link to the shared folder needs no further action. Start a new agent session after installation.
 
-### Update
+### Update a manual installation
 
 ```sh
 git -C "$HOME/.agents/skills/app-store-image-studio" pull --ff-only
