@@ -1,0 +1,4 @@
+interface:
+  display_name: "App Store Image Studio"
+  short_description: "App-Store-Bilder analysieren, gestalten und verfeinern"
+  default_prompt: "Nutze $app-store-image-studio, um meine App zu analysieren, vorhandene Screenshots und Zielgeräte zu klären und gemeinsam mit mir App-Store-Bilder zu gestalten."
