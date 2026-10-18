@@ -12,7 +12,7 @@ Create a reusable, app-specific set of App Store images collaboratively. Communi
 - No visual element is mandatory. Screenshot position, size, orientation, framing, cropping, background image, solid color, gradient, text amount, typography, and text position are all choices the user can change, including after seeing examples.
 - Existing marketing images, when supplied or found in a project, are inspiration only. Do not inherit their theme, palette, background, layout, copy, or device treatment by default.
 - Base recommendations on the target app and the user's intent. Offer alternatives and explain your recommendation; let the user decide or describe a different idea. Do not force a preset or treat the first choice as permanent.
-- Use real app screenshots. Do not generate, redraw, or invent UI, app data, capabilities, or testimonials. Generated background art is separate from the screenshot.
+- When a composition shows app UI, use real app screenshots. A screenshot-free opening image is a supported composition, not a missing capture. Do not generate, redraw, or invent UI, app data, capabilities, or testimonials. Generated background or hero artwork stays separate from app UI and typeset text.
 
 ## 1. Establish inputs and devices
 
@@ -37,6 +37,10 @@ Propose a manageable set of distinct directions, usually two or three, with:
 - Example imagery/background treatment, palette, text amount and placement, and screenshot arrangement.
 - Candidate feature sequence and truthful benefit-led copy in the requested language.
 
+Plan an opening attention-grabber without an app screenshot: app name or supplied logo, a strong app-relevant visual, a short value proposition, and a few useful app-specific details or benefits. Derive these from the app analysis; do not reuse another app's subject matter or claims. Present this opening image with the initial examples, rather than making the user ask for it separately. The user can change, replace, or omit it like any other image.
+
+For the following feature images, make compositions such as large straight or tilted screenshots, a headline with short supporting copy, and small icon/callout groups straightforward options. They can share a cohesive visual language without requiring identical arrangements. Keep these as editable choices, not a fixed template or minimum text count.
+
 Invite the user's own idea explicitly. They can select, combine, modify, or replace every proposal. If they already supplied a clear direction, develop it instead of requiring an unnecessary style vote. If they delegate the choice, state your recommendation and proceed within that authorization.
 
 Show representative visual examples when that helps the decision. Mark exploratory mock UI as illustrative; do not pass it off as a real capture or use it in deliverables. Do not create a new interactive editor application unless requested; a gallery and repeatable renderer are enough.
@@ -47,7 +51,9 @@ For missing screenshots, read [references/capture-and-export.md](references/capt
 
 Use existing suitable captures first. If required source, simulator, login, or app support is unavailable, explain the exact gap and ask for the missing input; continue independent design work without inventing captures. Never stretch a phone screenshot into a tablet or Duo interface.
 
-Create a small representative batch before producing the whole set, including different aspect ratios when their layouts need separate review. Keep compositions and copy editable in structured project state plus a repeatable local renderer. Prefer existing tools and bundled dependencies; do not add rendering dependencies to the native app.
+Create a small representative batch before producing the whole set: the screenshot-free opener and at least one feature image, unless the user chose a different sequence. Include different aspect ratios when their layouts need separate review. Missing simulator captures should not prevent creating the opener from available app materials. Keep compositions and copy editable in structured project state plus a repeatable local renderer. Prefer existing tools and bundled dependencies; do not add rendering dependencies to the native app.
+
+Keep production lightweight: use one shared renderer with per-image settings, reusable background assets, and optional screenshot layers. A simple color/gradient or existing artwork can produce an initial example immediately; use image generation when the selected concept calls for bespoke artwork. Do not require a separate application, elaborate setup, or new capture for a text/background-only revision.
 
 Give every image a stable ID and show it in the preview. Explain which concept each example illustrates. Ask for feedback on the examples, including individual images. Let the user describe changes in their own words.
 
@@ -70,6 +76,6 @@ Inspect every full-size export and a thumbnail/contact sheet for text clipping, 
 
 Deliver ordered image files, a combined preview or local gallery, original capture sources, editable composition/copy state, and a working regeneration command. A practical default is a dedicated `marketing/app-store/` folder with `raw/`, `exports/`, `preview/`, and rendering sources; use an existing project convention when present.
 
-The saved state should record each stable image ID, feature/message, source capture, locale, device/display, orientation, output dimensions and path, copy, layout/background choices, and per-image overrides. Record the capture context and the Apple requirements source/date so future runs can distinguish confirmed targets from assumptions.
+The saved state should record each stable image ID, composition type (screenshot-free opener or feature image), feature/message, source capture when used, artwork/logo assets, locale, device/display, orientation, output dimensions and path, copy, layout/background choices, and per-image overrides. Screenshot-free images have no required capture source. Record the capture context and the Apple requirements source/date so future runs can distinguish confirmed targets from assumptions.
 
 End with links to the images and preview, a short validation summary, and any actual blockers. Invite further edits to individual images. Uploading to App Store Connect or submitting a release is outside this skill's default scope and needs a separate user request.

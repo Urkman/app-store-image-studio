@@ -15,12 +15,18 @@ Everything can change:
 - Text amount, wording, typography, and placement.
 - Individual images after the first examples, including device and language variants.
 
+## Start with an attention-grabber
+
+The proposed set starts with a **screenshot-free opening image**: your app name or logo, an app-relevant visual, a short value proposition, and a few verified benefits or details. It introduces the app before the feature screenshots. You can change it, replace it, or leave it out.
+
+The following images can use large straight or tilted screenshots, short headlines, supporting copy, and icon/callout groups. Their arrangement, background, and text remain fully editable. The agent should make this straightforward with a shared renderer and per-image settings, not a separate editor application or a new capture for every design revision.
+
 ## How it works
 
 1. **Clarify inputs.** Ask whether you already have screenshots and which devices need images: iPhone, iPhone Duo, and/or iPad. Resolve orientations, display variants, languages, and important features.
 2. **Understand the app.** Inspect its purpose, audience, workflows, design, and existing assets. Ask for missing information rather than inventing product claims.
 3. **Propose concepts.** Present suitable directions, example copy, and a proposed image sequence. You can provide your own idea at any time.
-4. **Create initial examples.** Reuse suitable supplied screenshots. Capture missing views from the actual app in the simulator when the required tools and app are available.
+4. **Create initial examples.** Show the screenshot-free opener and a representative feature image. Reuse suitable supplied screenshots and capture missing views from the actual app in the simulator when the required tools and app are available. The opener can be designed while missing captures are being resolved.
 5. **Revise individual images.** Request changes by image ID. The agent updates the affected compositions and previews while preserving your other choices.
 6. **Export and verify.** Produce the full set, inspect the actual images, and check the selected export targets against current Apple requirements.
 
