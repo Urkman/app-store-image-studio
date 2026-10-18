@@ -27,15 +27,25 @@ Also establish languages, desired image count or important features, and any per
 
 Inspect supplied screenshots visually, check their actual dimensions, language, device context, useful content, and obvious loading/error states. Report gaps and propose how to fill them. A source screenshot's dimensions and the final marketing canvas dimensions are separate facts.
 
-## 2. Analyze and propose
+## 2. Analyze the app
 
 Understand the app's main purpose, audience, core workflows, distinguishing features, existing visual identity, and supported layouts. Use project materials and the running app when available. Distinguish observed facts from assumptions; ask if a missing product fact changes the message. Do not pretend to have run an app when only source or assets were inspected.
+
+## 3. Agree which images to create
+
+After the analysis, propose a concrete ordered image list, not just a visual style. Explain which feature, app view, or benefit each image should show and why it belongs in the set. Include the screenshot-free opener as a proposal. Explicitly invite the user to add their own ideas, replace suggestions, remove images, or change the order. Agree the list before starting captures or production; if the user delegates the selection, state your proposed list and proceed within that delegation.
+
+Save the agreed list with stable image IDs. For each image record its purpose, the exact app screen(s) and UI/data state needed (or no screenshot for the opener), target devices/display states, orientations and languages, and whether a suitable existing capture is available or a new one is required. A compact table is useful for reviewing this with the user.
+
+Treat this list as the capture plan. Capture the screens and states needed for the agreed images, including the user's own ideas. Do not replace a requested feature with an easier-to-capture screen, silently drop it, or choose the final set solely from whichever screenshots happen to be available. When a requested capture cannot be obtained, name the affected image and blocker, ask how to resolve it, and keep the item visible as pending. User changes update the agreed list and its capture requirements.
+
+## 4. Propose the visual direction
 
 Propose a manageable set of distinct directions, usually two or three, with:
 
 - Why each direction fits this particular app, and which you recommend.
 - Example imagery/background treatment, palette, text amount and placement, and screenshot arrangement.
-- Candidate feature sequence and truthful benefit-led copy in the requested language.
+- Truthful benefit-led copy for the agreed images in the requested language; discuss changes to the agreed feature sequence rather than silently replacing it.
 
 Plan an opening attention-grabber without an app screenshot: app name or supplied logo, a strong app-relevant visual, a short value proposition, and a few useful app-specific details or benefits. Derive these from the app analysis; do not reuse another app's subject matter or claims. Present this opening image with the initial examples, rather than making the user ask for it separately. The user can change, replace, or omit it like any other image.
 
@@ -45,9 +55,9 @@ Invite the user's own idea explicitly. They can select, combine, modify, or repl
 
 Show representative visual examples when that helps the decision. Mark exploratory mock UI as illustrative; do not pass it off as a real capture or use it in deliverables. Do not create a new interactive editor application unless requested; a gallery and repeatable renderer are enough.
 
-## 3. Capture and create initial examples
+## 5. Capture and create initial examples
 
-For missing screenshots, read [references/capture-and-export.md](references/capture-and-export.md). Build and run the target app using its repository's instructions, discover the available simulator tools, navigate to suitable views, and capture them. Follow that project's scheme and build settings rather than copying them from a reference app.
+For missing screenshots, read [references/capture-and-export.md](references/capture-and-export.md). Work through the agreed image list and its required screen/device/state combinations. Build and run the target app using its repository's instructions, discover the available simulator tools, navigate to the specified views and states, and capture them. Follow that project's scheme and build settings rather than copying them from a reference app. Check each capture visually against its planned image and record the resulting source path and capture status.
 
 Use existing suitable captures first. If required source, simulator, login, or app support is unavailable, explain the exact gap and ask for the missing input; continue independent design work without inventing captures. Never stretch a phone screenshot into a tablet or Duo interface.
 
@@ -57,7 +67,7 @@ Keep production lightweight: use one shared renderer with per-image settings, re
 
 Give every image a stable ID and show it in the preview. Explain which concept each example illustrates. Ask for feedback on the examples, including individual images. Let the user describe changes in their own words.
 
-## 4. Revise per image
+## 6. Revise per image
 
 Accept requests such as "Bild 02: Screenshot rechts, weniger Text und einen hellen Verlauf" without reopening the entire questionnaire.
 
@@ -68,9 +78,11 @@ Accept requests such as "Bild 02: Screenshot rechts, weniger Text und einen hell
 
 Persist edits in the rendering source as well as the output so later regeneration does not lose feedback.
 
-## 5. Complete, verify, and deliver
+## 7. Complete, verify, and deliver
 
 Once the examples establish the chosen direction, create the remaining images. Before calling exports App Store ready, verify current Apple requirements for the selected display categories using official documentation, as described in the reference. Do not rely on old sizes copied from a reference project.
+
+Reconcile the exports with the agreed image list: every selected image and requested variant must have an output, be explicitly removed by the user, or be reported as blocked. Check that each screenshot shows the agreed feature and state. Do not call the set complete while required captures or images are silently missing.
 
 Inspect every full-size export and a thumbnail/contact sheet for text clipping, legibility, contrast, screenshot framing, missing assets, empty outputs, and unintended changes to the captured UI. Verify actual encoded dimensions, format, color mode, and alpha against the selected export requirements. Recheck affected variants after an edit.
 

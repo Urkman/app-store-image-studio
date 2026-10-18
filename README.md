@@ -25,10 +25,11 @@ The following images can use large straight or tilted screenshots, short headlin
 
 1. **Clarify inputs.** Ask whether you already have screenshots and which devices need images: iPhone, iPhone Duo, and/or iPad. Resolve orientations, display variants, languages, and important features.
 2. **Understand the app.** Inspect its purpose, audience, workflows, design, and existing assets. Ask for missing information rather than inventing product claims.
-3. **Propose concepts.** Present suitable directions, example copy, and a proposed image sequence. You can provide your own idea at any time.
-4. **Create initial examples.** Show the screenshot-free opener and a representative feature image. Reuse suitable supplied screenshots and capture missing views from the actual app in the simulator when the required tools and app are available. The opener can be designed while missing captures are being resolved.
-5. **Revise individual images.** Request changes by image ID. The agent updates the affected compositions and previews while preserving your other choices.
-6. **Export and verify.** Produce the full set, inspect the actual images, and check the selected export targets against current Apple requirements.
+3. **Choose what to show.** After the analysis, propose a concrete image list with the feature, view, or benefit for each image. You can add your own ideas, replace suggestions, remove images, and change the order. Agree the list before capturing or producing images.
+4. **Propose visual concepts.** Present suitable directions and example copy for the selected images. You can describe your own style at any time.
+5. **Capture and create initial examples.** Use the agreed image list as the capture plan: reuse matching supplied screenshots and capture the exact missing screens and states for the selected devices, orientations, and languages. Do not substitute easier or unrelated screens. Show the screenshot-free opener and a representative feature image; the opener can be designed while missing captures are being resolved.
+6. **Revise individual images.** Request changes by image ID. The agent updates affected compositions and previews while preserving your other choices. New content ideas update the image list and required captures.
+7. **Export and verify.** Produce the full set, inspect the actual images, and check the selected export targets against current Apple requirements. Reconcile every agreed image and variant with an export or an explicitly reported blocker.
 
 ## Install globally
 

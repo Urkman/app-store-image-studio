@@ -4,6 +4,8 @@ Read when acquiring missing screenshots or preparing final exports. Discover ins
 
 ## Capture from the actual app
 
+Start with the agreed image list from the app analysis and user discussion. Map each required screenshot to an image ID, exact app view/state, device/display context, orientation, and locale. Reuse matching supplied captures; take every missing required capture and update the list with its path/status. Suitable screenshots of unrelated screens do not fulfill an agreed image. Keep blocked captures explicit instead of substituting different features without the user's decision.
+
 1. Read the target project's `AGENTS.md` and its build/run guidance. Determine project/workspace, scheme, bundle ID, supported devices, and any existing screenshot/demo mode. Follow repository-specific build settings; do not copy paths, bundle IDs, or schemes from another project.
 2. Inspect installed Xcode and simulator inventory. Shell discovery can use `xcodebuild -list`, `xcrun simctl list devices available`, and `xcrun simctl list runtimes`; first confirm the tools exist. If available, use purpose-built simulator build and interaction tools according to their documented API.
 3. Build for the selected simulator using an isolated build-output directory. Boot the selected device, install and launch the app, and navigate with available simulator UI tools. Use an explicit simulator UDID throughout instead of an ambiguous `booted` target when multiple simulators are running.
